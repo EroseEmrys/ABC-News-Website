@@ -82,11 +82,11 @@ body {
 .photo {
     flex: 50%;
     margin-right: 20px;
-   width: 80%;
+   
 }
 
 .photo img {
-    width: 100%;
+    width: 80%;
     border-radius: 5px;
 }
 
