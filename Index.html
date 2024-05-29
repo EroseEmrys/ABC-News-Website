@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC News</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header id="header"></header>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="best">
+                <h3>Best Of The</h3>
+                <h1>BEST</h1>
+            </div>
+            <ul class="sidebarc">
+                <li><a href="content1.html#news1">Unlock Secrets: Dive into the Latest Tech News and Developments</a> <hr></li>
+                <li><a href="content1.html#news2">Unlock Secrets: Explore a Wide Range of Geeky Gadgets and Gizmos</a> <hr></li>
+                <li><a href="content1.html#news3">Unlock Secrets: Gain In-Depth Insights into Business Trends and Strategies</a> <hr></li>
+                <li><a href="content1.html#news4">Unlock Secrets: Stay Updated on the Latest Innovations and Breakthroughs</a> <hr></li>
+                <li><a href="content1.html#news5">Unlock Secrets: Get Hands-On Reviews and Insights into Cutting-Edge Gadgets</a> <hr></li>
+                <li><a href="content1.html#news6">Unlock Secrets: Stay Ahead with the Latest Trends and Developments in Tech</a> <hr></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <div id="content1" onclick="openContent1()">
+                <img src="11.jpg" alt="content1photo">
+                <div class="content1news">
+                    <h2>Tech Stocks Surge as Market Reacts to Positive Earnings Reports from Big Tech Giants</h2>
+                    <p>Tech stocks surged today as investors reacted positively to robust earnings reports from key technology companies. The upbeat financial performance of these firms fueled optimism about the sector's continued growth trajectory, driving stock prices higher.</p>
+                    <p style="font-size: 10px;">By <b>Lasith kulathunga</b></p>
+                </div>
+            </div>
+            <div class="content2-wrapper" >
+                <div id="content2" onclick="openContent1()">
+                    <img src="22.jpg" alt="content2photo">
+                    <div class="content2news">
+                        <h4>WiFi Technology Revolutionizes Connectivity: Advancements and Implications</h4>
+                    </div>
+                </div>
+                <div class="content2-copy" onclick="openContent1()">
+                    <img src="work-8772016_1280.jpg" alt="content2photo">
+                    <div class="content2news">
+                        <h4>Welding Iron: Sparks Fly as Tech Giants Report Strong Earnings</h4>
+                    </div>
+                </div>
+                <div class="content2-copy" onclick="openContent1()">
+                    <img src="crane-8400990_1280.jpg" alt="content2photo">
+                    <div class="content2news">
+                        <h4>Railway Infrastructure Development: Transforming Transportation Networks</h4>
+                    </div>
+                </div>
+            </div>
+<br>
+           
+            <div class="news-container" onclick="openContent1()">
+                <img class="news-img" src="45.jpg" alt="Tech News">
+                <div class="news-text">
+                    <h2>Tech Stocks Surge on Positive Earnings</h2>
+                    <p>Tech stocks soared as key companies like Apple and Microsoft posted strong earnings, boosting investor optimism.</p>
+                    <p class="author">By Lasith Kulathunga</p>
+                </div>
+            </div>
+           
+
+        </main>
+    </div>
+    <footer id="footer"></footer>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+
+        
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+        function openContent1() {
+            window.location.href = 'content1.html';
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My News Page</title>
+    <link rel="stylesheet" href="content.css">
+</head>
+<body>
+    <header id="header"></header>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="best">
+                <h3 style="color:#F8F8F8 ;">Best Of The</h3>
+                <h1 style="color:#F8F8F8 ;">BEST</h1>
+            </div>
+            <ul class="sidebarc">
+                <li><a href="#news1">Unlock Secrets: Dive into the Latest Tech News and Developments</a> <hr></li>
+                <li><a href="#news2">Unlock Secrets: Explore a Wide Range of Geeky Gadgets and Gizmos</a> <hr></li>
+                <li><a href="#news3">Unlock Secrets: Gain In-Depth Insights into Business Trends and Strategies</a> <hr></li>
+                <li><a href="#news4">Unlock Secrets: Stay Updated on the Latest Innovations and Breakthroughs</a> <hr></li>
+                <li><a href="#news5">Unlock Secrets: Get Hands-On Reviews and Insights into Cutting-Edge Gadgets</a> <hr></li>
+                <li><a href="#news6">Unlock Secrets: Stay Ahead with the Latest Trends and Developments in Tech</a> <hr></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <div class="news">
+                <div class="photo">
+                    <img src="11.jpg" alt="Tech Stocks Surge">
+                </div>
+                <div class="content">
+                    <h2>Tech Stocks Surge as Market Reacts to Positive Earnings Reports from Big Tech Giants</h2>
+                    <p>Tech stocks surged today as investors reacted positively to robust earnings reports from key technology companies. The upbeat financial performance of these firms fueled optimism about the sector's continued growth trajectory, driving stock prices higher.</p>
+                    <p>Leading the charge were prominent tech giants such as Apple, Microsoft, Amazon, and Alphabet (Google's parent company). Each of these companies reported quarterly earnings that exceeded expectations, sending their respective stock prices soaring.</p>
+                    <p>The surge in tech stocks comes amid a backdrop of increasing reliance on technology-driven solutions across various industries. From remote work to digital transformation initiatives, technology has become an integral part of modern business operations.</p>
+                    <p>Investors see the positive earnings reports as a sign of resilience and growth potential within the tech sector, particularly in light of recent global challenges such as the COVID-19 pandemic. Companies that have demonstrated agility and innovation in adapting to changing market dynamics have been rewarded with strong financial performance.</p>
+                    <p>Analysts predict that the momentum in tech stocks is likely to continue in the near term, driven by ongoing digitalization efforts across industries and the anticipation of new product launches and technological innovations.</p>
+                    <p class="author">By Lasith Kulathunga</p>
+                </div>
+            </div>
+            <div class="news">
+                <div class="photo">
+                    <img src="12.jpg" alt="Tech Stocks Surge">
+                </div>
+                <div class="content">
+                    <h2>Key Players in the Tech Sector</h2>
+                    <p>While the overall tech sector experienced a surge, certain companies stood out for their exceptional performance.</p>
+                    <p>Apple Inc. (AAPL) reported record-breaking revenue across its product lines, driven by strong iPhone sales and continued growth in services such as Apple Music and iCloud. The company's stock price rose by over 10% following the earnings announcement.</p>
+                    <p>Microsoft Corporation (MSFT) saw a significant increase in demand for its cloud computing services, with revenue from Azure growing by 50% year-over-year. The company's stock reached new highs, surpassing analyst expectations.</p>
+                    <p>Amazon.com Inc. (AMZN) reported a 44% increase in net sales, driven by continued growth in its e-commerce and cloud computing divisions. The company's stock price surged, reflecting investor confidence in its long-term growth prospects.</p>
+                    <p>Alphabet Inc. (GOOGL), the parent company of Google, reported strong advertising revenue and robust growth in its cloud and YouTube segments. The company's stock rose by over 15% following the earnings release.</p>
+                    <p>Other notable performers in the tech sector include Facebook (Meta Platforms Inc.), Nvidia Corporation, and Tesla Inc., all of which reported strong earnings and saw their stock prices rise.</p>
+                    <p class="author">By Lasith Kulathunga</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer id="footer"></footer>
+    <script>
+        
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+
+       
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
