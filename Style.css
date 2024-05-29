@@ -34,6 +34,7 @@ body {
     padding: 20px;
     margin-right: 20px;
     color: var(--off-white);
+    font-size: 15px;
 }
 
 .best {
