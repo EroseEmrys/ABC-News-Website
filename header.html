@@ -1,90 +1,101 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <style>
-        html, body {
-            margin: 0px;
-        }
 
-        header {
-            font-family: Raleway;
-            margin: 0 auto;
-            
-            text-align: center;
-            background: #555;
-        }
+ <style>
 
-        header h1 {
-            color: #AAA;
-            font-size: 40px;
-            font-weight: lighter;
-            margin-bottom: 5px;
-        }
+html, body
+{
+    margin: 0px;
+}
 
-        header span {
-            color: #222;
-        }
+header
+{
+    font-family: Raleway;
+    margin: 0 auto;
+	
+	text-align: center;
+    background: #555;
+}
 
-        footer span {
-            color: #AAA;
-        }
+header h1
+{
+    color: #AAA;
+    font-size: 40px;
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
 
-        div.container {
-            font-family: Raleway;
-            margin: 0 auto;
-            padding: 10em 3em;
-            text-align: center;
-        }
+header span
+{
+    color: #222;
+}
 
-        div.container a {
-            color: #FFF;
-            text-decoration: none;
-            font: 20px Raleway;
-            margin: 0px 10px;
-            padding: 10px 10px;
-            position: relative;
-            z-index: 0;
-            cursor: pointer;
-        }
+footer span
+{
+  color: #AAA;
+}
 
-        .red {
-            background: #0e3636;
-        }
+div.container
+{
+    font-family: Raleway;
+    margin: 0 auto;
+	padding: 1em 2em;
+	text-align: center;
+}
 
-        div.topBotomBordersOut a:before,
-        div.topBotomBordersOut a:after {
-            position: absolute;
-            left: 0px;
-            width: 100%;
-            height: 2px;
-            background: #FFF;
-            content: "";
-            opacity: 0;
-            transition: all 0.3s;
-        }
+div.container a
+{
+    color: #FFF;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
 
-        div.topBotomBordersOut a:before {
-            top: 0px;
-            transform: translateY(10px);
-        }
+.red
+{
+    background:#0e3636;
+}
 
-        div.topBotomBordersOut a:after {
-            bottom: 0px;
-            transform: translateY(-10px);
-        }
 
-        div.topBotomBordersOut a:hover:before,
-        div.topBotomBordersOut a:hover:after {
-            opacity: 1;
-            transform: translateY(0px);
-        }
-    </style>
+
+div.topBotomBordersOut a:before, div.topBotomBordersOut a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+
+div.topBotomBordersOut a:before
+{
+    top: 0px;
+    transform: translateY(10px);
+}
+
+div.topBotomBordersOut a:after
+{
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+</style>
 </head>
 <body>
-    <header>
-        <h1>ABC <span>News</span></h1>
-    </header>
-
     <div class="container red topBotomBordersOut">
         <a>HOME</a>
         <a>NEW</a>
@@ -92,6 +103,10 @@
         <a>TRENDING</a>
         <a>ABOUT</a>
         <a>CONTACT</a>
-    </div>
+
+      </div>
+
+    
+
 </body>
 </html>
